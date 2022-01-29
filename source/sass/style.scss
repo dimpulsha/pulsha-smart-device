@@ -1,3 +1,16 @@
-h1 {
-  color: red;
-}
+//global-style
+
+@import "./global/color.scss";
+@import "./global/fonts.scss";
+@import "./global/view-port.scss";
+@import "./global/body-global.scss";
+@import "./global/mixin.scss";
+
+
+//block-style
+
+@import "./block/page.scss";
+@import "./block/button.scss";
+@import "./block/header.scss";
+@import "./block/logo.scss";
+@import "./block/nav.scss";

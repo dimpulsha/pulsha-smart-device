@@ -1,0 +1,24 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:45px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid $border-button-default;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: $head-font-family;
+  // font-family:"Roboto Condensed", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button--call-button {
+  flex-shrink: 0;
+  width: 180px;
+  color: $inversion-text;
+}

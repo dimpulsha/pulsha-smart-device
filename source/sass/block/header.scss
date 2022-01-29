@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 33px;
+  padding: 0 25px;
+  width: 100%;
+  @media (max-width: $tablet-max-width) {
+    margin-top: 0;
+    height: 84px;
+  }
+}
+
+.header__logo {
+  flex-shrink: 0;
+  display: block;
+  width: 202px;
+  height: 52px;
+  margin-right: 35px;
+}
+
+.header__nav {
+  // max-width: 60%;
+  margin-left: auto;
+}
+
+.header__button {
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
+}

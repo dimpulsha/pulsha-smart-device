@@ -1,0 +1,17 @@
+.logo__img {
+  display: none;
+}
+
+.logo__img--full {
+  display: initial;
+  @media (max-width: $mobile-max-width) {
+  display: none;
+  }
+}
+.logo__img--mobile {
+  @media (max-width: $mobile-max-width) {
+  display: initial;
+  }
+}
+
+

@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Smart Device</title>
+  <meta name="keywords"
+    content="Smart Device, Печатные платы, производство и монтаж, поставка электронных комплектующих, поставка приборных блоков и модулей, промэлектроника в Москве">
+  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/PTMono-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <!-- проверить шрифты только для лого и выкинуть -->
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+
+<body class="page">
+  <div class="page__header-wrapper">
+    <header class="header ">
+      <a class="header__logo logo">
+        <!-- можно ещё как элементы спрайта SVG -->
+        <img class="logo__img logo__img--full" src="img/logo-full.svg" alt="Логотип компании Smart Device" width="202"
+          height="52">
+        <img class="logo__img logo__img--mobile" src="img/logo-brain-mob.svg" alt="Логотип компании Smart Device"
+          width="38" height="38">
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__contact-list">
+          <li class="nav__contact-item nav__contact-item--mail">
+            <svg class="nav__contact-item-ico nav__contact-item-ico--mail" width="19" height="14">
+              <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
+            </svg>
+            <a href="mailto:info@sd.ru">info@sd.ru</a>
+          </li>
+          <li class="nav__contact-item nav__contact-item--phone">
+            <svg class="nav__contact-item-ico nav__contact-item-ico--phone" width="18" height="18">
+              <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+            </svg>
+            <a href="tel:+74950005252">+7&nbsp;(495)&nbsp;000&nbsp;52&nbsp;52</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__button button button--call-button" type="button">Заказать звонок</button>
+  </header>
+  </div>
+  <main class="main page__main">
+    <section class="main__section section-promo"></section>
+  </main>
+  <footer class="footer page_footer"></footer>
 </body>
+
 </html>
