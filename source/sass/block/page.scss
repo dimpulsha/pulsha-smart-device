@@ -6,13 +6,20 @@
 }
 
 .page__header-wrapper {
+  z-index: 1;
   grid-column: 1 / -1;
   grid-row: 1 / 2;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1411px;
   //temp
   background-color: $dark;
+}
+
+.page__header {
+  // outline: 2px solid tomato;
+  width: 100%;
+  max-width: 1440px;
+  margin: 33px auto 0;
+  padding: 0 15px;
+  // margin-top: 33px;
 }
 
 .page__main {
@@ -20,3 +27,22 @@
   grid-row: 1 / 3;
 }
 
+.page__footer-wrapper {
+  grid-column: 1 / -1;
+  grid-row: 3 / -1;
+}
+
+.page__footer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media (max-width: $tablet-max-width) {
+    padding: 0 25px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 0 15px;
+  }
+}

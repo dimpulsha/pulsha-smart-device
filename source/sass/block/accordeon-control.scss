@@ -1,0 +1,23 @@
+.accordeon-control__close-icon {
+  display: none;
+}
+
+.accordeon--open .accordeon-control__close-icon {
+  display: initial;
+}
+
+.accordeon--open .accordeon-control__open-icon {
+  display: none;
+}
+
+.accordeon__item {
+  @media (max-width: $mobile-max-width){
+    display: none;
+  }
+}
+
+.accordeon--open .accordeon__item {
+  @media (max-width: $mobile-max-width){
+    display: initial;
+  }
+}

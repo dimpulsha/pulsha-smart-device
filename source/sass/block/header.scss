@@ -1,8 +1,9 @@
 .header {
+  // z-index: 99;
   display: flex;
   align-items: center;
-  margin-top: 33px;
-  padding: 0 25px;
+
+  // padding: 0 25px;
   width: 100%;
   @media (max-width: $tablet-max-width) {
     margin-top: 0;

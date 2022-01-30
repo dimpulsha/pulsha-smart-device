@@ -1,0 +1,21 @@
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+}
+
+.social-list li {
+  margin-left: 15px;
+}
+
+.social-list a svg {
+  fill: $social-icon-normal;
+}
+
+.social-list a:hover svg {
+  fill: $social-icon-hover;
+}
+
+.social-list a:active svg {
+  fill: $social-icon-active;
+}

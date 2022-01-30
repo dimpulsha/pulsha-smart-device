@@ -8,7 +8,6 @@
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
-
   margin-right: 38px;
   margin-left: -122px;
   font-size: 16px;
@@ -29,11 +28,11 @@
   }
 }
 
-.nav__contact-item a {
+.nav__contact-item span{
   @media (max-width: $tablet-max-width) {
     @include visually-hidden;
     // display: none;
-}
+  }
 }
 
 // @media (max-width: $tablet-max-width)
@@ -42,19 +41,19 @@
   fill:$blue;
   @media (max-width: $tablet-max-width) {
     margin-right: 0;
-}
+  }
 }
 
 .nav__contact-item--mail svg {
   @media (max-width: $tablet-max-width) {
     width: 25px;
     height: 19px;
-}
+  }
 }
 
 .nav__contact-item--phone svg {
   @media (max-width: $tablet-max-width) {
     width: 24px;
     height: 24px;
-}
+  }
 }

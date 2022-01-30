@@ -1,0 +1,219 @@
+.footer__content-wrapper {
+  display: grid;
+  grid-template-columns: 202px 1fr auto;
+  column-gap: 30px;
+  margin-bottom: 55px;
+
+  @media (max-width: $tablet-max-width){
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+     margin-bottom: 35px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    display: block;
+  }
+}
+
+.footer h2 {
+  margin: 0;
+  padding: 0;
+  font-family: $accented-font-family;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $title-text;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-footer;
+}
+
+.footer__links {
+  position: relative;
+
+   @media (max-width: $tablet-max-width) {
+     grid-column: 1 / -1;
+     grid-row: 1 / 2;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     min-height: 97px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      bottom: 0;
+      left: calc(calc(100% - 100vw) / 2);
+      width: 100vw;
+      height: 1px;
+      background-color: $border-line-section;
+    }
+  }
+  @media (max-width: $tablet-max-width){
+    flex-direction: column;
+  }
+}
+
+.footer__links h2 {
+  @include visually-hidden;
+}
+
+.footer__logo{
+  @media (max-width: $mobile-max-width){
+    margin-bottom: 25px;
+  }
+}
+
+.footer__links a span {
+  @include visually-hidden;
+}
+
+.footer__social {
+  margin-top: 52px;
+
+   @media (max-width: $tablet-max-width){
+     margin: 0;
+   }
+   @media (max-width: $mobile-max-width){
+     margin-top: 0;
+     margin-bottom: 54px;
+   }
+}
+
+.footer__site-map {
+  position: relative;
+  justify-self: center;
+
+  @media (max-width: $tablet-max-width){
+    justify-self: normal;
+    margin-top: 33px;
+  }
+  @media (max-width: $mobile-max-width){
+    padding-bottom: 28px;
+
+    &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    left: calc(calc(100% - 100vw) / 2);
+    width: 100vw;
+    height: 1px;
+    background-color: $border-line-section;
+    }
+  }
+}
+
+.footer__section-header {
+  margin-bottom: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .button__accordeon {
+  display: none;
+    @media (max-width: $mobile-max-width) {
+      display: initial;
+    }
+}
+
+.footer__site-list{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: repeat(4, auto);
+  grid-auto-flow: column;
+  column-gap: 73px;
+  @media (max-width: $desktop-middle-point) {
+     column-gap: 35px;
+  }
+  @media (max-width: $tablet-max-width) {
+    grid-template-columns: auto;
+    grid-auto-flow: row;
+  }
+}
+
+.footer__site-list li {
+  font-size: 15px;
+  line-height: 25px;
+  color: $text-footer;
+}
+
+.footer__contact {
+  @media (max-width: $tablet-max-width){
+    margin-top: 33px;
+    justify-self: end;
+  }
+}
+
+.footer__contact-list li {
+  font-size: 15px;
+  line-height: 25px;
+  color: $text-footer;
+}
+
+.footer__copyright-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 52px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: calc(calc(100% - 100vw) / 2);
+    width: 100vw;
+    height: 1px;
+    background-color: $border-line-section;
+  }
+}
+
+.footer .footer__copyright {
+  margin-right: 70px;
+  @media (max-width: $tablet-max-width) {
+    @include visually-hidden;
+  }
+}
+
+.footer .footer__since {
+  margin-right: 140px;
+   @media (max-width: $tablet-max-width) {
+     display: none;
+   }
+}
+
+.footer .footer__since--link {
+  display: none;
+   @media (max-width: $tablet-max-width) {
+     display: initial;
+     margin-right: 0;
+   }
+   @media (max-width: $mobile-max-width){
+    margin-bottom: 31px;
+  }
+}
+
+.footer .footer__developed {
+  margin-left: auto;
+}
+
+.footer a:hover {
+  color: $link-default-hover;
+}
+
+.footer a:active {
+  color: $link-default-active;
+}

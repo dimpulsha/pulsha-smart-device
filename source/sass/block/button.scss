@@ -2,13 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height:45px;
   margin: 0;
   padding: 0;
-  border: 1px solid $border-button-default;
-  border-radius: 5px;
+  border: none;
   background-color: transparent;
-  font-family: $head-font-family;
+  font-family: $accented-font-family;
   // font-family:"Roboto Condensed", Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -17,8 +15,18 @@
   cursor: pointer;
 }
 
+.button__main{
+  height:45px;
+  border: 1px solid $border-button-default;
+  border-radius: 5px;
+}
+
 .button--call-button {
   flex-shrink: 0;
   width: 180px;
   color: $inversion-text;
+}
+
+.button__accordeon span{
+  @include visually-hidden;
 }
