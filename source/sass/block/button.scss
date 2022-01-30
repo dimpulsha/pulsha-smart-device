@@ -27,6 +27,14 @@
   color: $inversion-text;
 }
 
+.button__main--hello {
+  flex-shrink: 0;
+  width: 407px;
+  height: 55px;
+  color: $inversion-text;
+  background-color: $border-button-inversion;
+}
+
 .button__accordeon span{
   @include visually-hidden;
 }
