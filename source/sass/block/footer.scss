@@ -7,7 +7,7 @@
   @media (max-width: $tablet-max-width){
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
-     margin-bottom: 35px;
+    margin-bottom: 35px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -41,12 +41,12 @@
   position: relative;
 
    @media (max-width: $tablet-max-width) {
-     grid-column: 1 / -1;
-     grid-row: 1 / 2;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     min-height: 97px;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 97px;
 
     &::after {
       position: absolute;
@@ -81,13 +81,13 @@
 .footer__social {
   margin-top: 52px;
 
-   @media (max-width: $tablet-max-width){
-     margin: 0;
-   }
-   @media (max-width: $mobile-max-width){
-     margin-top: 0;
-     margin-bottom: 54px;
-   }
+  @media (max-width: $tablet-max-width){
+    margin: 0;
+  }
+  @media (max-width: $mobile-max-width){
+    margin-top: 0;
+    margin-bottom: 54px;
+  }
 }
 
 .footer__site-map {
@@ -135,7 +135,7 @@
   grid-auto-flow: column;
   column-gap: 73px;
   @media (max-width: $desktop-middle-point) {
-     column-gap: 35px;
+    column-gap: 35px;
   }
   @media (max-width: $tablet-max-width) {
     grid-template-columns: auto;
@@ -190,18 +190,18 @@
 
 .footer .footer__since {
   margin-right: 140px;
-   @media (max-width: $tablet-max-width) {
-     display: none;
-   }
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
 }
 
 .footer .footer__since--link {
   display: none;
-   @media (max-width: $tablet-max-width) {
-     display: initial;
-     margin-right: 0;
-   }
-   @media (max-width: $mobile-max-width){
+  @media (max-width: $tablet-max-width) {
+    display: initial;
+    margin-right: 0;
+  }
+  @media (max-width: $mobile-max-width){
     margin-bottom: 31px;
   }
 }

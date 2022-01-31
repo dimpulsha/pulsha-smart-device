@@ -61,7 +61,27 @@
             <span class="hello__link--alter-title">Бесплатная консультация</span> </a>
         </div>
         <div class="hello__image">
-          <img src="img/promo/main-deco-dt@1x.png" alt="" width="705" height="515">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/promo/main-deco-mob@1x.webp 1x, img/promo/main-deco-mob@2x.webp 2x">
+            <!-- 1x 698×545 2x 1396×1090 -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/promo/main-deco-pad@1x.webp 1x, img/promo/main-deco-pad@2x.webp 2x">
+            <!-- 1x 957×530 2x 1914×1060 -->
+            <source type="image/webp" srcset="img/promo/main-deco-dt@1x.webp 1x, img/promo/main-deco-dt@2x.webp 2x">
+          <img srcset="
+          img/promo/main-deco-dt@1x.png 705w,
+          img/promo/main-deco-dt@2x.png 1410w,
+          img/promo/main-deco-pad@1x.png 260w,
+          img/promo/main-deco-pad@2x.png 520w,
+          img/promo/main-deco-mob@1x.png 294w,
+          img/promo/main-deco-mob@1x.png@2x.png 588w
+          " sizes="
+          (min-width: 1024px) 705px,
+          ((min-width:1024px) and (min-resolution: 2dppx)) 1410px,
+          (min-width: 768px) 260px,
+          ((min-width: 768px) and (min-resolution: 2dppx)) 520px,
+          (max-width: 767px) 294px,
+          ((max-width: 767px) and (min-resolution: 2dppx)) 588px" src="img/promo/main-deco-dt@1x.png" alt="Плата микроконтроллера" width="705" height="515">
+          </picture>
         </div>
       </div>
 
