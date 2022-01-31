@@ -1,0 +1,107 @@
+
+.advantages h2 {
+  @include visually-hidden;
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+   @media (max-width: $mobile-max-width) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+   }
+}
+
+.advantages__item {
+  position: relative;
+  min-height: 300px;
+  border: 1px solid $border-advantage;
+  border-left: 3px solid $border-advantage-accent;
+  padding: 24px 42px 20px 44px;
+  // padding-right: 42px;
+  // padding-left: 44px;
+
+   @media (max-width: $tablet-max-width) {
+     min-height: 232px;
+     padding: 24px 22px 21px 26px;
+   }
+
+   @media (max-width: $mobile-max-width) {
+     min-height: 232px;
+     padding: 24px 13px 21px 26px;
+   }
+}
+
+.advantades-icon {
+  // position: absolute;
+  width: 40px;
+  height: 40px;
+  // top: 40px;
+  // left: 45px;
+}
+
+.advantages__item--confidence .advantades-icon svg {
+  width: 30px;
+  height: 26px;
+}
+
+.advantades-icon svg {
+  fill:$icon-normal;
+}
+
+.advantages__item h3 {
+  margin-top: 18px;
+  margin-bottom: 15px;
+  font-family: $accented-font-family;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: $text-accented;
+
+  @media (max-width: $tablet-max-width) {
+    margin-top: 10px;
+    margin-bottom: 7px;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    margin-top: 14px;
+    margin-bottom: 9px;
+    font-size: 20px;
+    line-height: 28px;
+   }
+
+}
+
+.advantages__item p {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item p br {
+  display: none;
+  @media (max-width: $tablet-max-width) {
+    display: initial;
+  }
+}
+
+
+
+
+.advantages__item:hover {
+  background-color: $background-accented;
+
+  & svg {
+    fill:$icon-inversion;
+  }
+
+  & h3 {
+    color: $inversion-text;
+  }
+
+  & p {
+    color: $inversion-text;
+  }
+}
+

@@ -5,3 +5,22 @@
 .main__hello{
   background-color: $dark;
 }
+
+.main__advantages {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 110px;
+  padding: 0 15px;
+
+   @media (max-width: $tablet-max-width) {
+     margin-top: 54px;
+     padding: 0 25x;
+   }
+
+   @media (max-width: $mobile-max-width) {
+     margin-top: 37px;
+     padding: 0 15x;
+   }
+
+}
