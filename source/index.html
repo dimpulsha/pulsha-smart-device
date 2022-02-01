@@ -59,7 +59,7 @@
         <div class="hello__content">
           <h1>Печатные платы</h1>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="button button__main button__main--hello hello__link" href="#feedback">
+          <a class="button button__main button--hello hello__link" href="#feedback">
             <span class="hello__link--main-title">Получить бесплатную консультацию</span>
             <span class="hello__link--alter-title">Бесплатная консультация</span> </a>
         </div>
@@ -78,8 +78,7 @@
           img/promo/main-deco-pad@1x.png 260w,
           img/promo/main-deco-pad@2x.png 520w,
           img/promo/main-deco-mob@1x.png 294w,
-          img/promo/main-deco-mob@1x.png@2x.png 588w
-          " sizes="
+          img/promo/main-deco-mob@1x.png@2x.png 588w" sizes="
           (min-width: 1024px) 705px,
           ((min-width:1024px) and (min-resolution: 2dppx)) 1410px,
           (min-width: 768px) 260px,
@@ -115,6 +114,7 @@
               </svg>
             </div>
             <h3>Крупные поставщики</h3>
+            <!-- !!!! убрать br -->
             <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,<br> HOLGLITRONIC, REFOND.
               Сотрудничество с такими компаниями обеспичивает <br> хорошее качество нашей продукции.</p>
           </li>
@@ -139,7 +139,71 @@
           </li>
         </ul>
       </section>
-      <section class="main__about about" id="about"></section>
+      <section class="main__about about" id="about">
+        <div class="about_deco">
+          <picture>
+            <img srcset="img/deco/2005-dt@1x.png 220w,
+            img/deco/2005-dt@1x.png 440w,
+            img/deco/2005-pad@1x.png 244w,
+            img/deco/2005-pad@2x.png 478w" ; sizes="
+              (min-width: 1024px) 220px,
+              ((min-width:1024px) and (min-resolution: 2dppx)) 440px,
+              (min-width: 768px) 244px,
+              ((min-width: 768px) and (min-resolution: 2dppx)) 478px" src="img/deco/2005-dt@1x.png"
+              alt="Декоративный рисунок" width="220" height="317">
+          </picture>
+        </div>
+        <div class="about__content-wrapper">
+          <h2>О компании</h2>
+          <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
+            1997 года.
+            Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+          <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+            Печатные платы и
+            комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома
+            (ВАЗ, АвтоГАЗ),
+            МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+          <a class="about__button button button__main button--about" href="#">подробнее</a>
+        </div>
+      </section>
+      <section class="main__production production" id="production">
+        <div class="production__wrapper">
+          <h2>Service Device предлагает следующие товары и услуги</h2>
+          <ul class="production__list">
+            <li class="production__item">
+              <a href="#">
+                <h3>Производство <br> печатных плат</h3>
+                <div class="production__picture-wrapper">
+                  <picture>
+                  <img src="img/prod/make-board-dt@1x.png" alt="Производство печатных плат">
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="production__item">
+              <a href="#">
+                <h3>Монтаж печатных <br> плат</h3>
+                <div class="production__picture-wrapper">
+                  <picture>
+                    <img src="img/prod/solder-board-dt@1x.png" alt="Монтаж компонентов на плату">
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="production__item">
+              <a href="#">
+                <h3>Комплектующие <br> для светотехники</h3>
+                <div class="production__picture-wrapper">
+                  <picture>
+                    <img src="img/prod/light-dt@1x.png" alt="Светодиодная лента">
+                  </picture>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </section>
     </div>
     <section></section>
     <section id="feedback"></section>

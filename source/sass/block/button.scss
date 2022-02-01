@@ -27,13 +27,14 @@
   color: $inversion-text;
 }
 
-.button__main--hello {
+.button--hello {
   flex-shrink: 0;
   width: 407px;
   height: 55px;
   font-size: 16px;
   line-height: 19px;
   color: $inversion-text;
+  border: none;
   background-color: $border-button-inversion;
 
   @media (max-width: $tablet-max-width) {
@@ -42,6 +43,22 @@
   // width: 100%;
   @media (max-width: $mobile-max-width) {
     width: 100%;
+  }
+}
+
+.button--about {
+  width: 180px;
+  border: 1px solid $border-accented;
+  border-radius: 5px;
+  color: $text-accented;
+
+  &:hover{
+    background-color: $background-accented;
+    color: $inversion-text;
+  }
+
+  &:active {
+    color: inherit;
   }
 }
 

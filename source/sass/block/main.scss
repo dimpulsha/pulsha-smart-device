@@ -1,7 +1,7 @@
-.main {
-  // display: grid;
-  // grid-template-rows: repeat(5, auto);
-}
+// .main {
+//   // display: grid;
+//   // grid-template-rows: repeat(5, auto);
+// }
 .main__hello{
   background-color: $dark;
 }
@@ -22,5 +22,27 @@
      margin-top: 37px;
      padding: 0 15x;
    }
+}
 
+// дублирование с main__advantages
+.main__about {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 110px;
+  padding: 0 15px;
+
+   @media (max-width: $tablet-max-width) {
+     margin-top: 54px;
+     padding: 0 25x;
+   }
+
+   @media (max-width: $mobile-max-width) {
+     margin-top: 37px;
+     padding: 0 15x;
+   }
+}
+
+.main__production {
+// тут отступы
 }
