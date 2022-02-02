@@ -51,6 +51,14 @@
     line-height: 45px;
   }
 
+  @media (max-width: $mobile-max-width) {
+    width: 140px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+
 }
 
 .about p {
@@ -59,10 +67,17 @@
   margin-bottom: 20px;
   background-color: $background-inversion;
 
+  @media (max-width: $mobile-max-width) {
+  margin-bottom: 40px;
+  }
+
 }
 
 .about__button {
   margin-top: 42px;
+  @media (max-width: $mobile-max-width) {
+    margin-top: 27px;
+  }
 }
 
 .about p:not(:first-of-type){
@@ -75,4 +90,10 @@
   @media (max-width: $mobile-max-width) {
     -webkit-line-clamp: 8;
   }
+}
+
+.about p:last-of-type{
+   @media (max-width: $mobile-max-width) {
+    margin-bottom: 20px;
+   }
 }

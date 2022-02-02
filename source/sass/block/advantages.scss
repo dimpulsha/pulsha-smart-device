@@ -31,7 +31,7 @@
 
    @media (max-width: $mobile-max-width) {
      min-height: 232px;
-     padding: 24px 13px 21px 26px;
+     padding: 24px 13px 23px 24px;
    }
 }
 
@@ -67,7 +67,7 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    margin-top: 14px;
+    margin-top: 8px;
     margin-bottom: 9px;
     font-size: 20px;
     line-height: 28px;
@@ -84,6 +84,36 @@
   display: none;
   @media (max-width: $tablet-max-width) {
     display: initial;
+  }
+  @media (max-width: $mobile-max-width) {
+    display: none;
+  }
+
+}
+
+.advantages__item.advantages__item--vendor {
+  padding-right: 10px;
+
+  & h3 {
+    margin-top: 6px;
+
+  }
+}
+
+
+.advantages__item.advantages__item--confidence {
+
+  & h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.advantages__item.advantages__item--price {
+
+  & h3 {
+    margin-top: 6px;
+    margin-bottom: 15px;
   }
 }
 

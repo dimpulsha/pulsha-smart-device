@@ -20,7 +20,7 @@
 
    @media (max-width: $mobile-max-width) {
      margin-top: 37px;
-     padding: 0 15x;
+     padding: 0 15px;
    }
 }
 
@@ -38,8 +38,8 @@
    }
 
    @media (max-width: $mobile-max-width) {
-     margin-top: 37px;
-     padding: 0 15x;
+     margin-top: 57px;
+     padding: 0 15px;
    }
 }
 
@@ -47,6 +47,9 @@
   margin-top: 96px;
    @media (max-width: $tablet-max-width) {
      margin-top: 76px;
+   }
+   @media (max-width: $mobile-max-width) {
+     margin-top: 65px;
    }
 
 }
