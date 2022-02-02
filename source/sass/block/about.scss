@@ -9,7 +9,7 @@
   width: 160px;
   height: 317px;
   @media (max-width: $tablet-max-width) {
-    width: 188px;
+    width: 185px;
     height: 361px;
   }
   @media (max-width: $mobile-max-width) {
@@ -29,6 +29,10 @@
 .about__content-wrapper{
   padding-left: 20px;
   padding-right: 20px;
+  @media (max-width: $tablet-max-width) {
+     padding-left: 0;
+     padding-right: 0;
+  }
 }
 
 .about h2 {
@@ -40,6 +44,13 @@
   font-size: 36px;
   line-height: 51px;
   background-color: $background-inversion;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
 }
 
 .about p {
@@ -51,7 +62,7 @@
 }
 
 .about__button {
-  margin-top: 37px;
+  margin-top: 42px;
 }
 
 .about p:not(:first-of-type){

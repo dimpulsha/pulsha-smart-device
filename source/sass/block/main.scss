@@ -15,7 +15,7 @@
 
    @media (max-width: $tablet-max-width) {
      margin-top: 54px;
-     padding: 0 25x;
+     padding: 0 25px;
    }
 
    @media (max-width: $mobile-max-width) {
@@ -34,7 +34,7 @@
 
    @media (max-width: $tablet-max-width) {
      margin-top: 54px;
-     padding: 0 25x;
+     padding: 0 25px;
    }
 
    @media (max-width: $mobile-max-width) {
@@ -45,6 +45,9 @@
 
 .main__production{
   margin-top: 96px;
+   @media (max-width: $tablet-max-width) {
+     margin-top: 76px;
+   }
 
 }
 
@@ -60,8 +63,8 @@
    @media (max-width: $tablet-max-width) {
   //    background-image: url("../img/main-deco-center-bg.svg");
   //   //  main-deco-center-bg
-  background-position-x: -360px;
-  background-position-y: -85px;
+  background-position-x: -350px;
+  background-position-y: -90px;
   // background-size: 50%;
    }
 
