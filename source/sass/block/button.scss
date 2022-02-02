@@ -51,6 +51,7 @@
   border: 1px solid $border-accented;
   border-radius: 5px;
   color: $text-accented;
+  background-color: $border-button-default;
 
   &:hover{
     background-color: $background-accented;

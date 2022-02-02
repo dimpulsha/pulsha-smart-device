@@ -43,6 +43,33 @@
    }
 }
 
-.main__production {
-// тут отступы
+.main__production{
+  margin-top: 96px;
+
+}
+
+.main__decor-wrapper{
+  overflow: hidden;
+  background-image: url("../img/main-deco-bg.svg");
+  background-repeat: no-repeat;
+  // background-position: center;
+  background-position-x: left;
+  background-position-y: -30px;
+  // background-size: 100%;
+
+   @media (max-width: $tablet-max-width) {
+  //    background-image: url("../img/main-deco-center-bg.svg");
+  //   //  main-deco-center-bg
+  background-position-x: -360px;
+  background-position-y: -85px;
+  // background-size: 50%;
+   }
+
+   @media (max-width: $mobile-max-width){
+  // background-size: contain;
+
+  //   //  background-size: 100%;
+   background-position-x: -680px;
+   background-position-y: 480px;
+   }
 }

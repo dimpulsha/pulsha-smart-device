@@ -19,7 +19,8 @@
   min-height: 300px;
   border: 1px solid $border-advantage;
   border-left: 3px solid $border-advantage-accent;
-  padding: 24px 42px 20px 44px;
+  padding: 41px 42px 20px 44px;
+  background-color: $background-inversion;
   // padding-right: 42px;
   // padding-left: 44px;
 
@@ -52,7 +53,7 @@
 }
 
 .advantages__item h3 {
-  margin-top: 18px;
+  margin-top: 16px;
   margin-bottom: 15px;
   font-family: $accented-font-family;
   font-weight: 400;
