@@ -61,6 +61,14 @@
 
 }
 
+.about__button {
+  margin-top: 40px;
+
+  @media (max-width: $mobile-max-width) {
+    margin-top: 27px;
+  }
+}
+
 .about p {
   overflow: hidden;
   margin-top: 0;
@@ -69,14 +77,6 @@
 
   @media (max-width: $mobile-max-width) {
   margin-bottom: 40px;
-  }
-
-}
-
-.about__button {
-  margin-top: 42px;
-  @media (max-width: $mobile-max-width) {
-    margin-top: 27px;
   }
 }
 
@@ -93,6 +93,7 @@
 }
 
 .about p:last-of-type{
+
    @media (max-width: $mobile-max-width) {
     margin-bottom: 20px;
    }

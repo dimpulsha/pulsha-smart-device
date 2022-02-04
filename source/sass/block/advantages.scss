@@ -43,10 +43,14 @@
   // left: 45px;
 }
 
-.advantages__item--confidence .advantades-icon svg {
-  width: 30px;
-  height: 26px;
-}
+// .advantages__item--confidence .advantades-icon {
+
+// }
+
+// .advantages__item--confidence .advantades-icon svg {
+//   width: 36px;
+//   height: 31px;
+// }
 
 .advantades-icon svg {
   fill:$icon-normal;
@@ -94,27 +98,42 @@
 .advantages__item.advantages__item--vendor {
   padding-right: 10px;
 
-  & h3 {
-    margin-top: 6px;
+  @media (max-width: $mobile-max-width) {
 
+  & h3 {
+    margin-top: 5px;
   }
+}
 }
 
 
 .advantages__item.advantages__item--confidence {
 
+  @media (max-width: $tablet-max-width) {
   & h3 {
     margin-top: 0;
     margin-bottom: 15px;
   }
+  }
+
+  // & h3 {
+  //   margin-top: 16px;
+  //   margin-bottom: 15px;
+  // }
 }
 
 .advantages__item.advantages__item--price {
 
-  & h3 {
-    margin-top: 6px;
-    margin-bottom: 15px;
+  @media (max-width: $mobile-max-width) {
+    & h3 {
+      margin-bottom: 16px;
+    }
   }
+
+  // & h3 {
+  //   margin-top: 16px;
+  //   margin-bottom: 15px;
+  // }
 }
 
 .advantages__item:hover {

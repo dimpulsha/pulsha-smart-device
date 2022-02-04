@@ -18,6 +18,6 @@
 
 .accordeon--open .accordeon__item {
   @media (max-width: $mobile-max-width){
-    display: initial;
+    display: block;
   }
 }

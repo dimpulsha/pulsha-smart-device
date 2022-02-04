@@ -63,6 +63,30 @@
   }
 }
 
+.button--submit {
+  width: 270px;
+  color: $inversion-text;
+
+  @media (max-width: $tablet-max-width) {
+    width: 277px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%
+  }
+
+
+}
+
+.button--submit:hover{
+  background-color: $background-button-form;
+}
+
+.button--submit:active{
+  background-color: $background-button-form;
+  color: inherit;
+}
+
 .button__accordeon span{
   @include visually-hidden;
 }

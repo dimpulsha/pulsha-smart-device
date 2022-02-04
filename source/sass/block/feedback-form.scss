@@ -1,0 +1,152 @@
+.feedback-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "name phone"
+                        "question question"
+                        "submit privacy";
+  column-gap: 31px;
+  row-gap: 41px;
+
+  @media (max-width: $tablet-max-width) {
+    // column-gap: 31px;
+  row-gap: 44px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    grid-template-columns: 1fr;
+      grid-template-areas:  "name "
+                            "phone"
+                            "question"
+                            "submit"
+                            "privacy";
+  row-gap: 32px;
+  }
+}
+
+.feedback-form__input {
+  font-family: $main-font-family;
+  color: $inversion-text;
+  background-color: $background-accented;
+}
+
+.feedback-form__input label {
+  @include visually-hidden;
+}
+
+.feedback-form__input input {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border: none;
+  background-color: $background-form-input-rgba;
+}
+
+.feedback-form__input input::placeholder{
+  font-family: $main-font-family;
+  color: $inversion-text;
+  opacity: 1;
+}
+
+
+.feedback-form__input textarea {
+  width: 100%;
+  height: 154px;
+  padding: 13px 16px;
+  resize: none;
+  border: none;
+  background-color: inherit;
+  background-color: $background-form-input-rgba;
+
+  @media (max-width: $mobile-max-width) {
+    height: 99px;
+  }
+}
+
+.feedback-form__input textarea::placeholder {
+  font-family: $main-font-family;
+  color: $inversion-text;
+  opacity: 1;
+}
+
+.feedback-form__checkbox {
+  padding-top: 5px;
+  padding-left: 7px;
+
+  @media (max-width: $tablet-max-width) {
+    padding-top: 11px;
+    padding-left: 10px;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    padding: 0;
+  }
+}
+
+.feedback-form__checkbox input{
+  @include visually-hidden;
+}
+
+.feedback-form__checkbox label {
+  display: flex;
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-label;
+  cursor: pointer;
+}
+
+.feedback-form__checkbox label span {
+  flex-shrink: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $border-button-default;
+}
+
+.feedback-form__checkbox input:not(:checked) + label svg {
+  display: none;
+}
+
+
+// .feedback-form__checkbox label::before {
+//   // position: absolute;
+//   content: "";
+//   display: block;
+//   width: 16px;
+//   height: 16px;
+//   // top:0;
+//   // left: 0;
+//   border: 1px solid $border-button-default;
+// }
+
+// .feedback-form__checkbox label::before {
+//   position: absolute;
+//   content: url(../img/icon-check.svg);
+// }
+
+.feedback-form__input--name {
+  grid-area: name;
+}
+
+.feedback-form__input--phone {
+   grid-area: phone;
+}
+
+.feedback-form__input--question {
+   grid-area: question;
+
+  // grid-column: 1 / -1;
+}
+
+.feedback-form__button--submit {
+  grid-area: submit;
+}
+
+.feedback-form__checkbox--privacy {
+  grid-area: privacy;
+}
