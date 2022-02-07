@@ -1,8 +1,18 @@
 .page {
+  position: relative;
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   scroll-behavior: smooth;
+}
+
+.page--popup-open {
+  // height: 100vh;
+  overflow: hidden;
+}
+
+.page--popup-open .popup {
+    display: flex;
 }
 
 .page__header-wrapper {

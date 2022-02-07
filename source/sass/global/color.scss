@@ -6,10 +6,12 @@ $white-rgba-08: rgba(255, 255, 255, 0.8);
 $blue: #00b2ff;
 $dark: #1b2d37;
 $dark-rgba-05: rgba(27, 45, 55, 0.5);
+// $dark-rgba-03: rgba(27, 45, 55, 0.5);
 $dark-light:#666666;
 $gray-dark: #626962;
 $gray-dark-rgba-02: rgba(98, 105, 98, 0.2);
 $gray: #788891;
+$gray-middle: #c4c4c4;
 $gray-light:#cdcdcd;
 $gray-light-light:#ebebeb;
 
@@ -39,3 +41,5 @@ $background-accented:$blue;
 $background-inversion:$white;
 $background-form-input-rgba: $white-rgba-01;
 $background-button-form: $gray-dark-rgba-02;
+$background-popup: $dark-rgba-05;
+$icon-button: $gray-middle;

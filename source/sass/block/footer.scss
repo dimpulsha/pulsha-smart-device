@@ -139,6 +139,8 @@
   grid-template-rows: repeat(4, auto);
   grid-auto-flow: column;
   column-gap: 73px;
+  margin-top: 27px;
+
   @media (max-width: $desktop-middle-point) {
     column-gap: 35px;
   }
@@ -170,8 +172,10 @@
 }
 
 .footer__contact-list {
-  @media (max-width: $mobile-max-width) {
     margin-top: 28px;
+
+  @media (max-width: $mobile-max-width) {
+    // margin-top: 28px;
     padding-right: 10px;
   }
 }
@@ -208,6 +212,7 @@
 
   @media (max-width: $tablet-max-width) {
     padding-top: 28px;
+    min-height: 123px;
   }
 
 }
@@ -250,7 +255,7 @@
 
 }
 
-.footer a:hover {
+.footer a:hover, .footer a:focus {
   color: $link-default-hover;
 }
 

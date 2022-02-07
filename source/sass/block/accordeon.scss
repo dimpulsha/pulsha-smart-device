@@ -1,12 +1,16 @@
-.accordeon-control__close-icon {
+.accordeon__control {
+  cursor: pointer;
+}
+
+.accordeon__close-icon {
   display: none;
 }
 
-.accordeon--open .accordeon-control__close-icon {
+.accordeon--open .accordeon__close-icon {
   display: initial;
 }
 
-.accordeon--open .accordeon-control__open-icon {
+.accordeon--open .accordeon__open-icon {
   display: none;
 }
 
@@ -16,8 +20,9 @@
   }
 }
 
-.accordeon--open .accordeon__item {
+.no-js .accordeon__item, .accordeon--open .accordeon__item {
   @media (max-width: $mobile-max-width){
     display: block;
   }
 }
+

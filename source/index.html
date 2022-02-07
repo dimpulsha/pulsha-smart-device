@@ -7,10 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device</title>
   <meta name="keywords"
-    content="Smart Device, Печатные платы, производство и монтаж, поставка электронных комплектующих, поставка приборных блоков и модулей, промэлектроника в Москве">
-  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/PTMono-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
-  <!-- проверить шрифты только для лого и выкинуть -->
+  content="Smart Device, Печатные платы, производство и монтаж, поставка электронных комплектующих, поставка приборных блоков и модулей, промэлектроника в Москве">
   <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Roboto-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -22,11 +19,13 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="page">
+<!-- page--popup-open - открытый popup
+  no-js - нет поддержки JS -->
+
+<body class="page no-js">
   <div class="page__header-wrapper">
     <header class="header page__header">
       <a class="header__logo logo">
-        <!-- можно ещё как элементы спрайта SVG -->
         <img class="logo__img logo__img--full" src="img/logo-full.svg" alt="Логотип компании Smart Device" width="202"
           height="52">
         <img class="logo__img logo__img--mobile" src="img/logo-brain-mob.svg" alt="Логотип компании Smart Device"
@@ -50,7 +49,8 @@
           </li>
         </ul>
       </nav>
-      <button class="header__button button button__main button--call-button" type="button">Заказать звонок</button>
+      <button class="header__button header__button--call-request button button__main button--call-button"
+        type="button">Заказать звонок</button>
     </header>
   </div>
   <main class="main page__main">
@@ -65,13 +65,15 @@
         </div>
         <div class="hello__image">
           <picture>
+            <!-- 1x 294x220 2x 588x440 -->
             <source type="image/webp" media="(max-width: 767px)"
               srcset="img/promo/main-deco-mob@1x.webp 1x, img/promo/main-deco-mob@2x.webp 2x">
-            <!-- 1x 698×545 2x 1396×1090 -->
+            <!-- 1x 260x340 2x 520x680 -->
             <source type="image/webp" media="(max-width: 1023px)"
               srcset="img/promo/main-deco-pad@1x.webp 1x, img/promo/main-deco-pad@2x.webp 2x">
-            <!-- 1x 957×530 2x 1914×1060 -->
+            <!-- 1x 705x515 2x 1410x1030 -->
             <source type="image/webp" srcset="img/promo/main-deco-dt@1x.webp 1x, img/promo/main-deco-dt@2x.webp 2x">
+            <!-- mob 1x 294x220 2x 588x440  pad 1x 260x340 2x 520x680 desktop 705x515 2x 1410x1030 -->
             <img srcset="
           img/promo/main-deco-dt@1x.png 705w,
           img/promo/main-deco-dt@2x.png 1410w,
@@ -114,7 +116,6 @@
               </svg>
             </div>
             <h3>Крупные поставщики</h3>
-            <!-- !!!! убрать br -->
             <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, <br>HOLGLITRONIC, REFOND.
               Сотрудничество с такими компаниями обеспичивает <br> хорошее качество нашей продукции.</p>
           </li>
@@ -142,7 +143,13 @@
       <section class="main__about about" id="about">
         <div class="about_deco">
           <picture>
-            <!-- Webp -->
+            <!-- 1x 244x362  2x  487x724-->
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/deco/2005-pad@1x.webp 1x, img/deco/2005-pad@2x.webp 2x">
+            <!-- 1x 220x317  2x  440x634 -->
+            <source type="image/webp" srcset="img/promo/main-deco-dt@1x.webp 1x, img/promo/main-deco-dt@2x.webp 2x">
+
+            <!-- pad 1x 244x362  2x  487x724  desktop 1x 220x317  2x  440x634  -->
             <img srcset="img/deco/2005-dt@1x.png 220w,
             img/deco/2005-dt@1x.png 440w,
             img/deco/2005-pad@1x.png 244w,
@@ -175,6 +182,16 @@
                 <h3>Производство <br> печатных плат</h3>
                 <div class="production__picture-wrapper">
                   <picture>
+                    <!-- 1x 290x256 2x  580x512 -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/prod/make-board-mob@1x.webp 1x, img/prod/make-board-mob@2x.webp 2x">
+                    <!-- 1x 715x256 2x 1430x512 -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/prod/make-board-pad@1x.webp 1x, img/prod/make-board-pad@2x.webp 2x">
+                    <!-- 1x 370x620 2x 740x1240 -->
+                    <source type="image/webp"
+                      srcset="img/prod/make-board-dt@1x.webp 1x, img/prod/make-board-dt@2x.webp 2x">
+                      <!--  mob  1x 290x256 2x  580x512  pad 715x256 2x 1430x512 desktop 370x620 2x 740x1240 -->
                     <img srcset="img/prod/make-board-dt@1x.png 370w,
                     img/prod/make-board-dt@2x.png 740w,
                     img/prod/make-board-pad@1x.png 715w,
@@ -197,19 +214,30 @@
                 <h3>Монтаж печатных <br> плат</h3>
                 <div class="production__picture-wrapper">
                   <picture>
+                    <!-- 1x 290x256 2x  580x512 -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/prod/solder-board-mob@1x.webp 1x, img/prod/solder-board-mob@2x.webp 2x">
+                    <!-- 1x  720x256 2x 1440x512 -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/prod/solder-board-pad@1x.webp 1x, img/prod/solder-board-pad@2x.webp 2x">
+                    <!-- 1x 370x620 2x 740x1240 -->
+                    <source type="image/webp"
+                      srcset="img/prod/solder-board-dt@1x.webp 1x, img/prod/solder-board-dt@2x.webp 2x">
+
+                      <!--  mob  1x 290x256 2x  580x512  pad 1x 720x256 2x 1440x512 desktop 370x620 2x 740x1240 -->
                     <img srcset="img/prod/solder-board-dt@1x.png 370w,
-                                img/prod/solder-board-dt@2x.png 740w,
-                                img/prod/solder-board-pad@1x.png 715w,
-                                img/prod/solder-board-pad@2x.png 1430w,
-                                img/prod/solder-board-mob@1x.png 290w,
-                                      img/prod/solder-board-mob@1x.png 580w" sizes="
-                                      (min-width: 1024px) 370px,
-                                      ((min-width:1024px) and (min-resolution: 2dppx)) 740px,
-                                      (min-width: 768px) 715px,
-                                      ((min-width: 768px) and (min-resolution: 2dppx)) 1430px,
-                                      (max-width: 767px) 290px,
-                                      ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
-                      src="img/prod/solder-board-dt@1x.png" alt="Производство печатных плат">
+                      img/prod/solder-board-dt@2x.png 740w,
+                      img/prod/solder-board-pad@1x.png 715w,
+                      img/prod/solder-board-pad@2x.png 1430w,
+                      img/prod/solder-board-mob@1x.png 290w,
+                      img/prod/solder-board-mob@1x.png 580w" sizes="
+                      (min-width: 1024px) 370px,
+                      ((min-width:1024px) and (min-resolution: 2dppx)) 740px,
+                      (min-width: 768px) 715px,
+                      ((min-width: 768px) and (min-resolution: 2dppx)) 1430px,
+                      (max-width: 767px) 290px,
+                      ((max-width: 767px) and (min-resolution: 2dppx)) 580px" src="img/prod/solder-board-dt@1x.png"
+                      alt="Производство печатных плат">
                   </picture>
                 </div>
               </a>
@@ -219,19 +247,30 @@
                 <h3>Комплектующие <br> для светотехники</h3>
                 <div class="production__picture-wrapper">
                   <picture>
+                    <!-- 1x 290x256 2x  580x512 -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/prod/light-mob@1x.webp 1x, img/prod/light-mob@2x.webp 2x">
+                    <!-- 1x  720x256 2x 1440x512 -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/prod/light-pad@1x.webp 1x, img/prod/light-pad@2x.webp 2x">
+                    <!-- 1x 370x620 2x 740x1240 -->
+                    <source type="image/webp"
+                      srcset="img/prod/light-dt@1x.webp 1x, img/prod/light-dt@2x.webp 2x">
+
+                      <!--  mob  1x 290x256 2x  580x512  pad 1x 720x256 2x 1440x512 desktop 370x620 2x 740x1240 -->
                     <img srcset="img/prod/light-dt@1x.png 370w,
-                                img/prod/light-dt@2x.png 740w,
-                                img/prod/light-pad@1x.png 715w,
-                                img/prod/light-pad@2x.png 1430w,
-                                img/prod/light-mob@1x.png 290w,
-                                img/prod/light-mob@1x.png 580w" sizes="
-                                (min-width: 1024px) 370px,
-                                ((min-width:1024px) and (min-resolution: 2dppx)) 740px,
-                                (min-width: 768px) 715px,
-                                ((min-width: 768px) and (min-resolution: 2dppx)) 1430px,
-                                (max-width: 767px) 290px,
-                                ((max-width: 767px) and (min-resolution: 2dppx)) 580px"
-                      src="img/prod/solder-board-dt@1x.png" alt="Производство печатных плат">
+                      img/prod/light-dt@2x.png 740w,
+                      img/prod/light-pad@1x.png 715w,
+                      img/prod/light-pad@2x.png 1430w,
+                      img/prod/light-mob@1x.png 290w,
+                      img/prod/light-mob@1x.png 580w" sizes="
+                      (min-width: 1024px) 370px,
+                      ((min-width:1024px) and (min-resolution: 2dppx)) 740px,
+                      (min-width: 768px) 715px,
+                      ((min-width: 768px) and (min-resolution: 2dppx)) 1430px,
+                      (max-width: 767px) 290px,
+                       ((max-width: 767px) and (min-resolution: 2dppx)) 580px" src="img/prod/solder-board-dt@1x.png"
+                      alt="Производство печатных плат">
                   </picture>
                 </div>
               </a>
@@ -242,42 +281,43 @@
     </div>
     <section class="main__feedback feedback" id="feedback">
       <div class="feedback__wrapper">
-        <!-- <div class="main__feedback-deco"></div> -->
         <div class="feedback__content-wrapper feedback__content-wrapper--aiplane">
           <h2>Остались вопросы? Задайте их нам!</h2>
-        <p>Мы проконсультируем Вас бесплатно</p>
-        <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="feedback-form__input feedback-form__input--name">
-            <label for="name-id">Введите ваше имя</label>
-            <input type="text" name="namу" id="name-id" required placeholder="Имя" autocomplete="off">
-          </div>
-          <div class="feedback-form__input feedback-form__input--phone">
-            <label for="phone-id">Введите номер телефона</label>
-            <input type="tel" name="phone" id="phone-id" required placeholder="Телефон">
-          </div>
-          <div class="feedback-form__input feedback-form__input--question">
-            <label for="question-id">Введите интересующий вас вопрос</label>
-            <textarea name="question" id="question-id" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
-          </div>
-          <div class="feedback-form__checkbox feedback-form__checkbox--privacy">
-            <input type="checkbox" name="privacy" id="privacy-id" checked required>
-            <label for="privacy-id">
-              <span>
-                <svg width="10" height="7" fill="none">
-                  <use xlink:href="img/sprite_auto.svg#icon-check"></use>
-                </svg>
-              </span>
-              Я согласен на обработку персональных данных</label>
-          </div>
-          <button class="feedback-form__button feedback-form__button--submit button button__main button--submit"
-            type="submit">Задать вопрос</button>
-        </form>
+          <p>Мы проконсультируем Вас бесплатно</p>
+          <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="feedback-form__input feedback-form__input--name">
+              <label for="name-id">Введите ваше имя</label>
+              <input type="text" name="name" id="name-id" placeholder="Имя" required>
+            </div>
+            <div class="feedback-form__input feedback-form__input--phone">
+              <label for="phone-id">Введите номер телефона</label>
+              <input type="tel" name="phone" id="phone-id" placeholder="Телефон" required
+                data-phone-pattern="+7(___)___-__-__" data-phone-clear="false">
+            </div>
+            <div class="feedback-form__input feedback-form__input--question">
+              <label for="question-id">Введите интересующий вас вопрос</label>
+              <textarea name="question" id="question-id" cols="30" rows="10" placeholder="Ваш вопрос"
+                autocomplete="off"></textarea>
+            </div>
+            <div class="feedback-form__checkbox feedback-form__checkbox--privacy">
+              <input type="checkbox" name="privacy" id="privacy-id" checked required>
+              <label for="privacy-id">
+                <span>
+                  <svg width="10" height="7" fill="none">
+                    <use xlink:href="img/sprite_auto.svg#icon-check"></use>
+                  </svg>
+                </span>
+                Я согласен на обработку персональных данных</label>
+            </div>
+            <button class="feedback-form__button feedback-form__button--submit button button__main button--submit"
+              type="submit">Задать вопрос</button>
+          </form>
         </div>
       </div>
     </section>
   </main>
   <div class="page__footer-wrapper">
-    <footer class="footer page__footer no-js" id="footer">
+    <footer class="footer page__footer" id="footer">
       <div class="footer__content-wrapper">
         <section class="footer__links">
           <h2>Мы в соцсетях</h2>
@@ -310,52 +350,53 @@
             </li>
           </ul>
         </section>
-        <section class="footer__site-map accordeon ">
-          <!-- <div class="footer__map-wrapper"> -->
-            <div class="footer__section-header accordeon-control">
-              <h2>Разделы сайта</h2>
-              <button type="button" class="button button__accordeon"><span>Развернуть</span>
-                <svg class="accordeon-control__open-icon" width="16" height="16">
-                  <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
-                </svg>
-                <svg class="accordeon-control__close-icon" width="16" height="2">
-                  <use xlink:href="img/sprite_auto.svg#icon-minus"></use>
-                </svg>
-              </button>
-            </div>
-            <ul class="footer__site-list accordeon__item">
-              <li>
-                <a href="#">О компании</a>
-              </li>
-              <li>
-                <a href="#">Продукты</a>
-              </li>
-              <li>
-                <a href="#">Производство печатных плат</a>
-              </li>
-              <li>
-                <a href="#">Монтаж печатных плат</a>
-              </li>
-              <li>
-                <a href="#">Комплектующие</a>
-              </li>
-              <li>
-                <a href="#">Доставка</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
-          <!-- </div> -->
-        </section>
-        <section class="footer__contact accordeon accordeon--open">
-          <div class="footer__section-header accordeon-control">
-            <h2>Наш офис</h2>
+        <!-- accordeon--open - открытое меню -->
+        <section class="footer__site-map accordeon accordeon--site-map" data-accordeonid="site-map">
+
+          <div class="footer__section-header accordeon__control">
+            <h2>Разделы сайта</h2>
             <button type="button" class="button button__accordeon"><span>Развернуть</span>
-              <svg class="accordeon-control__open-icon" width="16" height="16">
+              <svg class="accordeon__open-icon" width="16" height="16" fill="$icon-button">
                 <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
               </svg>
-              <svg class="accordeon-control__close-icon" width="16" height="2">
+              <svg class="accordeon__close-icon" width="16" height="2">
+                <use xlink:href="img/sprite_auto.svg#icon-minus"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="footer__site-list accordeon__item">
+            <li>
+              <a href="#">О компании</a>
+            </li>
+            <li>
+              <a href="#">Продукты</a>
+            </li>
+            <li>
+              <a href="#">Производство печатных плат</a>
+            </li>
+            <li>
+              <a href="#">Монтаж печатных плат</a>
+            </li>
+            <li>
+              <a href="#">Комплектующие</a>
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </section>
+        <!-- accordeon--open - открытое меню -->
+        <section class="footer__contact accordeon accordeon--contact" data-accordeonid="contact">
+          <div class="footer__section-header accordeon__control">
+            <h2>Наш офис</h2>
+            <button type="button" class="button button__accordeon"><span>Развернуть</span>
+              <svg class="accordeon__open-icon" width="16" height="16" fill="$icon-button">
+                <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+              </svg>
+              <svg class="accordeon__close-icon" width="16" height="2">
                 <use xlink:href="img/sprite_auto.svg#icon-minus"></use>
               </svg>
             </button>
@@ -384,33 +425,46 @@
       </div>
     </footer>
   </div>
-  <template class="feedback-popup">
-    <div class="popup">
-      <div class="popup__wrapper">
-        <p class="popup__title">Остались вопросы? Задайте их нам!</p>
-        <p>Мы проконсультируем Вас бесплатно</p>
-        <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="name-popup-id"><span>Введите ваше имя</span>
-            <input type="text" name="namу" id="name-popup-id" required placeholder="Имя" autocomplete="off"></label>
-          <label for="phone-popup-id">Введите номер телефона
-            <input type="text" name="phone" id="phone-popup-id" required placeholder="Телефон"></label>
-          <label for="question-popup-id">Введите интересующий вас вопрос
-            <textarea name="question" id="question-popup-id" cols="30" rows="10" placeholder="Ваш вопрос"></textarea></label>
-          <div class="form__privacy">
+  <div class="popup">
+    <div class="popup__wrapper">
+      <div class="popup__content-wrapper">
+        <p class="popup__title">Закажите звонок!</p>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form class="popup__form feedback-form feedback-form--popup" action="https://echo.htmlacademy.ru" method="post">
+          <div class="feedback-form__input feedback-form__input--name">
+            <label for="name-popup-id">Введите ваше имя</label>
+            <input type="text" name="name" id="name-popup-id" required placeholder="Имя" autofocus>
+          </div>
+          <div class="feedback-form__input feedback-form__input--phone">
+            <label for="phone-popup-id">Введите номер телефона</label>
+            <input type="tel" name="phone" id="phone-popup-id" data-phone-pattern="+7(___)___-__-__"
+              data-phone-clear="false" required placeholder="Телефон">
+          </div>
+          <div class="feedback-form__input feedback-form__input--question">
+            <label for="question-popup-id">Введите интересующий вас вопрос</label>
+            <textarea name="question" id="question-popup-id" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+          </div>
+          <div class="feedback-form__checkbox feedback-form__checkbox--privacy">
             <input type="checkbox" name="privacy" id="privacy-popup-id" checked required>
             <label for="privacy-popup-id">
               <span>
-                <svg width="10" height="7">
+                <svg width="10" height="7" fill="none">
                   <use xlink:href="img/sprite_auto.svg#icon-check"></use>
                 </svg>
               </span>
               Я согласен на обработку персональных данных</label>
           </div>
-          <button class="button button_main" type="submit">Задать вопрос</button>
+          <button class="feedback-form__button feedback-form__button--submit button button__main button--submit"
+            type="submit">Отправить</button>
         </form>
       </div>
+      <button class="popup__close-button button" type="button"><span>Закрыть окно</span>
+        <svg class="popup__close-icon" width="16" height="16">
+          <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+        </svg></button>
     </div>
-  </template>
+  </div>
+  <script type="text/javascript" async src="js/main.js"></script>
 </body>
 
 

@@ -2,7 +2,7 @@
 
 @import "./global/color.scss";
 @import "./global/fonts.scss";
-@import "./global/view-port.scss";
+@import "./global/settings.scss";
 @import "./global/body-global.scss";
 @import "./global/mixin.scss";
 
@@ -21,6 +21,8 @@
 @import "./block/production.scss";
 @import "./block/feedback.scss";
 @import "./block/feedback-form.scss";
+@import "./block/popup.scss";
+
 
 //
 @import "./block/footer.scss";

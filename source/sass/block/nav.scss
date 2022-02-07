@@ -35,7 +35,10 @@
     margin-top: 0;
     margin-left: 23px;
   }
+}
 
+.nav a:hover, .nav a:focus {
+  color: $text-accented;
 }
 
 .nav__contact-item span{

@@ -25,6 +25,15 @@
   flex-shrink: 0;
   width: 180px;
   color: $inversion-text;
+
+   &:hover , &:focus{
+    background-color: $background-accented;
+    color: $inversion-text;
+  }
+
+  &:active {
+    color: inherit;
+  }
 }
 
 .button--hello {
@@ -46,6 +55,18 @@
   }
 }
 
+.button--hello {
+
+  &:hover, &:focus {
+  opacity: 0.6;
+}
+
+&:active{
+  // background-color: $background-button-form;
+  color: inherit;
+  }
+}
+
 .button--about {
   width: 180px;
   border: 1px solid $border-accented;
@@ -53,7 +74,7 @@
   color: $text-accented;
   background-color: $border-button-default;
 
-  &:hover{
+  &:hover , &:focus{
     background-color: $background-accented;
     color: $inversion-text;
   }
@@ -70,15 +91,12 @@
   @media (max-width: $tablet-max-width) {
     width: 277px;
   }
-
   @media (max-width: $mobile-max-width) {
     width: 100%
   }
-
-
 }
 
-.button--submit:hover{
+.button--submit:hover, .button--submit:focus {
   background-color: $background-button-form;
 }
 
