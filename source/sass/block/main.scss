@@ -1,7 +1,3 @@
-// .main {
-//   // display: grid;
-//   // grid-template-rows: repeat(5, auto);
-// }
 .main__hello{
   background-color: $dark;
 }
@@ -13,21 +9,18 @@
   margin-top: 110px;
   padding: 0 15px;
 
-   @media (max-width: $tablet-max-width) {
+  @media (max-width: $tablet-max-width) {
+    margin-top: 54px;
+    padding: 0 25px;
+  }
 
-     margin-top: 54px;
-     padding: 0 25px;
-   }
-
-   @media (max-width: $mobile-max-width) {
+  @media (max-width: $mobile-max-width) {
     max-width: 600px;
-
-     margin-top: 37px;
-     padding: 0 15px;
-   }
+    margin-top: 37px;
+    padding: 0 15px;
+  }
 }
 
-// дублирование с main__advantages
 .main__about {
   width: 100%;
   max-width: 1200px;
@@ -35,61 +28,51 @@
   margin-top: 108px;
   padding: 0 15px;
 
-   @media (max-width: $tablet-max-width) {
-     max-width: 850px;
-     margin-top: 54px;
-     padding: 0 25px;
-   }
+  @media (max-width: $tablet-max-width) {
+    max-width: 850px;
+    margin-top: 54px;
+    padding: 0 25px;
+  }
 
-   @media (max-width: $mobile-max-width) {
+  @media (max-width: $mobile-max-width) {
     max-width: 600px;
-     margin-top: 54px;
-     padding: 0 15px;
-   }
+    margin-top: 54px;
+    padding: 0 15px;
+  }
 }
 
 .main__production{
   margin-top: 98px;
   padding-bottom: 127px;
-   @media (max-width: $tablet-max-width) {
-    //  max-width: 650px;
-     margin-top: 76px;
-     padding-bottom: 78px;
-   }
-   @media (max-width: $mobile-max-width) {
-     margin-top: 66px;
-     padding-bottom: 64px;
-   }
+  @media (max-width: $tablet-max-width) {
+    margin-top: 76px;
+    padding-bottom: 78px;
+  }
+  @media (max-width: $mobile-max-width) {
+    margin-top: 66px;
+    padding-bottom: 64px;
+  }
 }
 
 .main__decor-wrapper{
   overflow: hidden;
   background-image: url("../img/main-deco-bg.svg");
   background-repeat: no-repeat;
-  // background-position: center;
   background-position-x: left;
   background-position-y: -30px;
-  // background-size: 100%;
 
-   @media (max-width: $tablet-max-width) {
-  //    background-image: url("../img/main-deco-center-bg.svg");
-  //   //  main-deco-center-bg
-  background-position-x: -350px;
-  background-position-y: -90px;
-  // background-size: 50%;
-   }
+  @media (max-width: $tablet-max-width) {
+    background-position-x: -350px;
+    background-position-y: -90px;
+  }
 
-   @media (max-width: $mobile-max-width){
-  // background-size: contain;
-
-  //   //  background-size: 100%;
-   background-position-x: -680px;
-   background-position-y: 480px;
-   }
+  @media (max-width: $mobile-max-width){
+    background-position-x: -680px;
+    background-position-y: 480px;
+  }
 }
 
 .main__feedback {
-  // padding: 0 15px;
   padding-top: 93px;
   padding-bottom: 111px;
   background-color: $background-accented;
@@ -100,7 +83,6 @@
   @media (max-width: $tablet-max-width) {
     padding-top: 81px;
     padding-bottom: 105px;
-    //  padding: 25px;
     background-image: none;
   }
 
@@ -108,21 +90,4 @@
     padding-top: 31px;
     padding-bottom: 39px;
   }
-
-
 }
-
-// .main__feedback-deco{
-//   margin-right: 50px;
-//   background-image: url("../img/paper_airplane@1x.png");
-//   background-repeat: no-repeat;
-//   background-position-x: right;
-//   background-position-y: 161px;
-
-//    @media (max-width: $tablet-max-width) {
-//      display: none;
-//    }
-// }
-// , url("../img/paper_airplane@1x.png")
-// , 25% 161px
-

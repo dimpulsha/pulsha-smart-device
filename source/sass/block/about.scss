@@ -3,7 +3,7 @@
   grid-template-columns: auto 1fr;
 }
 
-.about_deco {
+.about__deco {
   // position: relative;
   overflow: hidden;
   width: 160px;
@@ -17,7 +17,7 @@
   }
 }
 
-.about_deco img{
+.about__deco img{
   height: 317px;
   object-fit: cover;
 
@@ -30,8 +30,8 @@
   padding-left: 20px;
   padding-right: 20px;
   @media (max-width: $tablet-max-width) {
-     padding-left: 0;
-     padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -94,7 +94,7 @@
 
 .about p:last-of-type{
 
-   @media (max-width: $mobile-max-width) {
+  @media (max-width: $mobile-max-width) {
     margin-bottom: 20px;
-   }
+  }
 }

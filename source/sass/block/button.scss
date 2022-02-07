@@ -15,7 +15,7 @@
   cursor: pointer;
 }
 
-.button__main{
+.button--main{
   height:45px;
   border: 1px solid $border-button-default;
   border-radius: 5px;
@@ -26,7 +26,7 @@
   width: 180px;
   color: $inversion-text;
 
-   &:hover , &:focus{
+  &:hover , &:focus{
     background-color: $background-accented;
     color: $inversion-text;
   }
@@ -49,7 +49,6 @@
   @media (max-width: $tablet-max-width) {
     width: 380px;
   }
-  // width: 100%;
   @media (max-width: $mobile-max-width) {
     width: 100%;
   }
@@ -62,7 +61,6 @@
 }
 
 &:active{
-  // background-color: $background-button-form;
   color: inherit;
   }
 }
@@ -105,6 +103,13 @@
   color: inherit;
 }
 
-.button__accordeon span{
+.button--accordeon {
+  display: none;
+  @media (max-width: $mobile-max-width) {
+    display: block;
+  }
+}
+
+.button--accordeon span{
   @include visually-hidden;
 }

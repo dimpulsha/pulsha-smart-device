@@ -150,13 +150,13 @@
   }
 }
 
-.hello__link--main-title {
+.hello__link-main-title {
   @media (max-width: $mobile-max-width){
     display: none;
   }
 }
 
-.hello__link--alter-title {
+.hello__link-alter-title {
   display: none;
   @media (max-width: $mobile-max-width){
     display: initial;

@@ -9,7 +9,6 @@
   row-gap: 41px;
 
   @media (max-width: $tablet-max-width) {
-    // column-gap: 31px;
   row-gap: 44px;
   }
 
@@ -68,7 +67,6 @@
   color: $inversion-text;
   opacity: 1;
 }
-
 
 .feedback-form__input textarea {
   width: 100%;
@@ -137,34 +135,16 @@
   display: none;
 }
 
-// .feedback-form__checkbox label::before {
-//   // position: absolute;
-//   content: "";
-//   display: block;
-//   width: 16px;
-//   height: 16px;
-//   // top:0;
-//   // left: 0;
-//   border: 1px solid $border-button-default;
-// }
-
-// .feedback-form__checkbox label::before {
-//   position: absolute;
-//   content: url(../img/icon-check.svg);
-// }
-
 .feedback-form__input--name {
   grid-area: name;
 }
 
 .feedback-form__input--phone {
-   grid-area: phone;
+  grid-area: phone;
 }
 
 .feedback-form__input--question {
-   grid-area: question;
-
-  // grid-column: 1 / -1;
+  grid-area: question;
 }
 
 .feedback-form__button--submit {
@@ -179,9 +159,9 @@
   grid-area: privacy;
 }
 
- .feedback-form__input input:focus, .feedback-form__input input:hover, .feedback-form__input textarea:focus, .feedback-form__input textarea:hover  {
+.feedback-form__input input:focus, .feedback-form__input input:hover, .feedback-form__input textarea:focus, .feedback-form__input textarea:hover  {
   outline: 2px solid white;
- }
+}
 
 .feedback-form__checkbox:focus-within, .feedback-form__checkbox:hover  {
   outline: 2px solid white;

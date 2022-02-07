@@ -41,7 +41,7 @@
 .footer__links {
   position: relative;
 
-   @media (max-width: $tablet-max-width) {
+  @media (max-width: $tablet-max-width) {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     display: flex;
@@ -120,7 +120,6 @@
 }
 
 .footer__section-header {
-  // margin-bottom: 27px;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,5 +1,7 @@
 .accordeon__control {
-  cursor: pointer;
+  @media (max-width: $mobile-max-width){
+    cursor: pointer;
+  }
 }
 
 .accordeon__close-icon {
@@ -25,4 +27,3 @@
     display: block;
   }
 }
-
