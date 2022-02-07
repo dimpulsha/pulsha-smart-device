@@ -54,11 +54,7 @@ const userInfo = {
 const testStorage = () => {
   try{
     userInfo.userName = localStorage.getItem('name');
-    console.log(localStorage.getItem('name'));
-    console.log(userInfo.userName);
     userInfo.userPhone = localStorage.getItem('phone');
-    console.log(localStorage.getItem('phone'));
-    console.log(userInfo.userPhone);
     return true;
   } catch (err) {
     return false;
@@ -66,19 +62,13 @@ const testStorage = () => {
 };
 
 const saveData = (form) => {
-  console.log(form['name'].value);
-  console.log(form['phone'].value);
   localStorage.setItem('name', form['name'].value);
   localStorage.setItem('phone', form['phone'].value);
 }
 
 const loadData = (form) => {
-  console.log('load1');
-  console.log(testStorage());
   if (testStorage()) {
-    console.log('test2');
     form['name'].value = userInfo.userName;
-    console.log(userInfo.name);
     form['phone'].value = userInfo.userPhone;
   }
 }
@@ -109,9 +99,7 @@ const phoneInputControl = (evt) => {
 const checkEmptyName = (evt, nameField) => {
   if (nameField.value.length === 0) {
     evt.preventDefault();
-    // console.log('test name');
     nameField.setCustomValidity('Имя не заполнено');
-    // nameInput.classList.add('contact-form--input-error');
   } else {
     nameField.setCustomValidity('');
   }
@@ -122,13 +110,10 @@ const checkPhoneInput = (evt, phoneField) => {
   if (phoneField.value.length === 0) {
     evt.preventDefault();
     phoneField.setCustomValidity('Телефон не заполнен.');
-    // console.log('test phone 1');
 
-    // phoneInput.classList.add('contact-form--input-error');
   } else if(!phonePattern.test(phoneField.value)){
     evt.preventDefault();
     phoneField.setCustomValidity('Укажите телефонный номер в формате +7(XXX)XXX-XX-XX.');
-    // console.log('test phone 2');
   }
   else {
     phoneField.setCustomValidity('');
@@ -140,8 +125,6 @@ const checkFormSubmit = (evt) => {
   checkEmptyName(evt, nameInput);
   checkPhoneInput(evt, phoneInput);
 }
-
-//заменить для всех телефонов (type - tel)
 
 for (let evt of ['input', 'blur', 'focus']) {
   phoneInput.addEventListener(evt, phoneInputControl);
@@ -157,7 +140,6 @@ const closePopupKey = (evt) => {
     removeEventListener('input', phoneInputControl);
     removeEventListener('blur', phoneInputControl);
     removeEventListener('focus', phoneInputControl);
-    // removeEventListener('click', checkPopupSubmit);
   }
 };
 
@@ -165,13 +147,8 @@ const closePopup = (evt) => {
   const target = evt.target;
   const popupCloseButton = document.querySelector('.popup__close-button');
   const popupForm = document.querySelector('.popup__content-wrapper');
-
-  // console.log(popupCloseButton);
   const isForm = target == popupForm || popupForm.contains(target);
   const isButton = target == popupCloseButton || popupCloseButton.contains(target);
-  // console.log(isForm);
-  // console.log(isButton);
-  // console.log(target);
 
   if (!isForm || isButton) {
     page.classList.remove('page--popup-open');
@@ -180,7 +157,6 @@ const closePopup = (evt) => {
     removeEventListener('input', phoneInputControl);
     removeEventListener('blur', phoneInputControl);
     removeEventListener('focus', phoneInputControl);
-    // removeEventListener('click', checkPopupSubmit);
   }
 };
 
@@ -192,7 +168,7 @@ callRequest.addEventListener('click', (evt) => {
   const popupName = popUp.querySelector('#name-popup-id');
   const popupSubmit = popUp.querySelector('.feedback-form__button--submit');
 
- loadData(popupForm);
+  loadData(popupForm);
   popupName.focus();
 
   const checkPopupSubmit = (evt) => {
@@ -209,6 +185,5 @@ callRequest.addEventListener('click', (evt) => {
   document.addEventListener('keydown', closePopupKey);
   popupSubmit.addEventListener('click', checkPopupSubmit)
 });
-// });
 
 page.classList.remove('no-js');
