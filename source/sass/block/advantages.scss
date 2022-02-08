@@ -72,7 +72,7 @@
   padding: 0;
 }
 
-.advantages__item p br {
+.advantages__item br {
   display: none;
   @media (max-width: $tablet-max-width) {
     display: initial;
@@ -80,21 +80,21 @@
   @media (max-width: $mobile-max-width) {
     display: none;
   }
-
 }
 
-.advantages__item.advantages__item--vendor {
+// .advantages__item
+.advantages__item--vendor {
   padding-right: 10px;
 
   @media (max-width: $mobile-max-width) {
-
     & h3 {
       margin-top: 5px;
     }
   }
 }
 
-.advantages__item.advantages__item--confidence {
+// .advantages__item
+.advantages__item--confidence {
 
   @media (max-width: $tablet-max-width) {
     & h3 {
@@ -104,7 +104,8 @@
   }
 }
 
-.advantages__item.advantages__item--price {
+// .advantages__item
+.advantages__item--price {
 
   @media (max-width: $mobile-max-width) {
     & h3 {

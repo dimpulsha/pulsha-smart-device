@@ -120,7 +120,8 @@
   cursor: pointer;
 }
 
-.feedback-form__checkbox label span {
+// .feedback-form__checkbox label span
+.feedback-form__checkbox .feedback-form__check-ico {
   flex-shrink: 0;
   display: inline-flex;
   justify-content: center;

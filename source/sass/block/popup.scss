@@ -25,7 +25,7 @@
   margin: 0 auto;
 }
 
-p.popup__title {
+.popup__content-wrapper h2 {
   margin: 0;
   margin-bottom: 14px;
   font-family: $accented-font-family;
@@ -40,7 +40,7 @@ p.popup__title {
   color: $inversion-text;
 }
 
-.popup__form{
+.popup__form {
   margin-top: 25px;
 }
 

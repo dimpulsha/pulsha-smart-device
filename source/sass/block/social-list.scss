@@ -8,14 +8,14 @@
   margin-left: 15px;
 }
 
-.social-list a svg {
+.social-list__link svg {
   fill: $social-icon-normal;
 }
 
-.social-list a:hover svg {
+.social-list__link:hover svg {
   fill: $social-icon-hover;
 }
 
-.social-list a:active svg {
+.social-list__link:active svg {
   fill: $social-icon-active;
 }
