@@ -78,42 +78,25 @@ const phoneInputControl = (evt) => {
   let clearVal = phoneNum.dataset.phoneClear;
   let mask = phoneNum.dataset.phonePattern;
   const template = '+7(___)___-__-__';
-  const prefix = '+7(';
   let pattern = mask ? mask : template;
-  let resultValue = '';
-  let symbolNum = 1;
-  // console.log('before pref');
-  // console.log(phoneNum.value);
+  const prefix = '';
+  let i = 0;
 
-  if (prefix) {
-    if (prefix.length > phoneNum.value.length) {
-      phoneNum.value = prefix;
-      // console.log('set pref');
-      // console.log(phoneNum.value);
-    }
-  }
-// slice(prefix.length).
-  let rawNum = phoneNum.value.replace(/\D/g, '');
-  // console.log('raw-num');
-  // console.log(rawNum);
 
-  resultValue += prefix;
 
-  for (let i = prefix.length; i < template.length; i++) {
+  let def = pattern.replace(/\D/g, "");
+  let val = evt.target.value.replace(/\D/g, "");
 
-      if (template[i] !== '_' && rawNum[symbolNum]) {
-        resultValue += template[i];
-
-      } else if (rawNum[symbolNum])  {
-        resultValue += rawNum[symbolNum];
-        symbolNum++;
-      }
-  }
-
-  phoneNum.value = resultValue;
-
-  // console.log(phoneNum.value);
-
+  if (clearVal !== 'false' && evt.type === 'blur') {
+            if (val.length < pattern.match(/([\_\d])/g).length) {
+                evt.target.value = '';
+                return;
+            }
+        }
+  if (def.length >= val.length) { val = def };
+  evt.target.value = pattern.replace(/./g, function (a) {
+    return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+  });
 }
 
 const checkEmptyName = (evt, nameField) => {
