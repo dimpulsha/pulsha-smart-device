@@ -193,17 +193,17 @@
     background-color: $border-line-section;
   }
 
-  @media (max-width: $tablet-max-width) {
-    flex-direction: column;
-    align-items: center;
+ @media (max-width: $tablet-max-width) {
+    padding-top: 18px;
     min-height: 69px;
   }
 
-  @media (max-width: $tablet-max-width) {
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+    align-items: center;
     padding-top: 28px;
     min-height: 123px;
   }
-
 }
 
 .footer .footer__copyright {

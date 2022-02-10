@@ -52,19 +52,29 @@
 .nav__contact-item svg {
   margin-right: 10px;
   fill:$blue;
+
   @media (max-width: $tablet-max-width) {
     margin-right: 0;
   }
 }
 
 .nav__contact-item--mail svg {
+  margin-right: 4px;
+  width: 19px;
+  height: 14px;
+
   @media (max-width: $tablet-max-width) {
+    margin-right: 0px;
     width: 25px;
     height: 19px;
   }
 }
 
 .nav__contact-item--phone svg {
+
+  width: 18px;
+  height: 18px;
+
   @media (max-width: $tablet-max-width) {
     width: 24px;
     height: 24px;
