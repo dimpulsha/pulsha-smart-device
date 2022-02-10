@@ -164,7 +164,15 @@
   outline: 2px solid white;
 }
 
-.feedback-form__checkbox:focus-within, .feedback-form__checkbox:hover  {
+// .feedback-form__checkbox:focus-within, .feedback-form__checkbox:hover  {
+//   outline: 2px solid white;
+//   outline-offset: 5px;
+// }
+
+.feedback-form__checkbox:hover span, .feedback-form__checkbox:focus-within span {
   outline: 2px solid white;
-  outline-offset: 5px;
+}
+
+.feedback-form__checkbox:hover label, .feedback-form__checkbox:focus-within label {
+  text-decoration: underline;
 }
