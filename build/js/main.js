@@ -82,21 +82,16 @@ const phoneInputControl = (evt) => {
   let pattern = mask ? mask : template;
   let resultValue = '';
   let symbolNum = 1;
-  // console.log('before pref');
-  // console.log(phoneNum.value);
+
 
   if (prefix) {
     if (prefix.length > phoneNum.value.length) {
       phoneNum.value = prefix;
-      // console.log('set pref');
-      // console.log(phoneNum.value);
+
     }
   }
 // slice(prefix.length).
   let rawNum = phoneNum.value.replace(/\D/g, '');
-  // console.log('raw-num');
-  // console.log(rawNum);
-
   resultValue += prefix;
 
   for (let i = prefix.length; i < template.length; i++) {
@@ -109,11 +104,7 @@ const phoneInputControl = (evt) => {
         symbolNum++;
       }
   }
-
   phoneNum.value = resultValue;
-
-  // console.log(phoneNum.value);
-
 }
 
 const checkEmptyName = (evt, nameField) => {
@@ -152,6 +143,10 @@ for (let evt of ['input', 'blur', 'focus']) {
 
 submitPageForm.addEventListener('click', checkFormSubmit);
 
+const popupFocusListArray = ['input:not([disabled]):not([type="hidden"]):not([aria-hidden])',
+  'button:not([disabled]):not([aria-hidden])',
+  'textarea:not([disabled]):not([aria-hidden])'];
+
 const closePopupKey = (evt) => {
   if (isEscape(evt)) {
     page.classList.remove('page--popup-open');
@@ -180,6 +175,30 @@ const closePopup = (evt) => {
   }
 };
 
+const switchField = (evt) => {
+  const popUp = evt.target.closest('.popup');
+  const popupFieldList = popUp.querySelectorAll(popupFocusListArray);
+  console.log('popupFieldList');
+  console.log(popupFieldList);
+  const nodesList = Array.prototype.slice.call(popupFieldList);
+  console.log('nodesList');
+  console.log(nodesList);
+  // const fieldIndex =
+
+  if (evt.key === 'Tab') {
+    if (evt.shiftKey) {
+      if (evt.target === nodesList[0]) {
+        evt.preventDefault();
+        nodesList[nodesList.length - 1].focus();
+      }
+    } else {
+      if (evt.target === nodesList[nodesList.length - 1]) {
+        evt.preventDefault();
+        nodesList[0].focus();
+      }
+    }
+  }
+}
 callRequest.addEventListener('click', (evt) => {
   page.classList.add('page--popup-open');
   const popUp = document.querySelector('.popup');
@@ -188,8 +207,12 @@ callRequest.addEventListener('click', (evt) => {
   const popupName = popUp.querySelector('#name-popup-id');
   const popupSubmit = popUp.querySelector('.feedback-form__button--submit');
 
+
+
   loadData(popupForm);
   popupName.focus();
+
+
 
   const checkPopupSubmit = (evt) => {
     checkEmptyName(evt, popupName);
@@ -202,6 +225,7 @@ callRequest.addEventListener('click', (evt) => {
   };
 
   popUp.addEventListener('click', closePopup);
+  popUp.addEventListener('keydown', switchField);
   document.addEventListener('keydown', closePopupKey);
   popupSubmit.addEventListener('click', checkPopupSubmit)
 });
