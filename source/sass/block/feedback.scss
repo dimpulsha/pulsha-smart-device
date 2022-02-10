@@ -42,16 +42,16 @@
   position: absolute;
   content: "";
   display: block;
-  width: 511px;
-  height: 286px;
-    right: 682px;
-  top: 70px;
+  width: 686px;
+  height: 641px;
+  right: 682px;
+  top: -152px;
   background-image: url("../img/paper_airplane@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (max-width: $desktop-fix-point) {
-    width: calc(100vw * 0.35);
+    width: calc(100vw * 0.45);
     background-size: contain;
   }
   @media (max-width: $tablet-max-width) {

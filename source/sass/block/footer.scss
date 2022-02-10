@@ -112,8 +112,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 28px;
-  padding-bottom: 27px;
+  @media (max-width: $mobile-max-width) {
+    padding-top: 28px;
+    padding-bottom: 27px;
+  }
+
 }
 
 .footer .button__accordeon {

@@ -49,7 +49,7 @@
 .hello__content {
   z-index: 2;
   margin-top: 316px;
-  width: 718px;
+  max-width: 718px;
   padding-bottom: 30px;
   // min-width: 50%;
 
@@ -117,6 +117,9 @@
   background-color: $inversion-text;
   }
 
+  @media (max-width: $desktop-middle-point){
+   font-size: 20px;
+  }
   @media (max-width: $tablet-max-width) {
     margin-bottom: 55px;
     font-size: 18px;
