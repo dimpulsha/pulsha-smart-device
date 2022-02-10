@@ -177,9 +177,14 @@
 
 .footer__copyright-wrapper {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: center;
+
+  display: grid;
+  grid-template-columns: repeat(3, auto) 1fr;
+  column-gap: 71px;
+  row-gap: 15px;
   min-height: 52px;
 
   &::before {
@@ -194,29 +199,30 @@
   }
 
  @media (max-width: $tablet-max-width) {
-    padding-top: 18px;
+    // padding-top: 18px;
     min-height: 69px;
   }
 
   @media (max-width: $mobile-max-width) {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 28px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    // flex-direction: column;
+    // align-items: center;
+    text-align: center;
+    padding-top: 13px;
     min-height: 123px;
   }
 }
 
 .footer .footer__copyright {
-  margin-right: 70px;
-
+  align-self: center;
   @media (max-width: $tablet-max-width) {
     @include visually-hidden;
   }
 }
 
 .footer__since, .footer__copyright-wrapper span, .footer__copyright-wrapper a {
-  margin: 0;
-  padding: 0;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;
@@ -225,7 +231,8 @@
 }
 
 .footer .footer__since {
-  margin-right: 140px;
+  align-self: center;
+  // margin-right: 140px;
   @media (max-width: $tablet-max-width) {
     display: none;
   }
@@ -233,6 +240,7 @@
 
 .footer .footer__since--link {
   display: none;
+
   @media (max-width: $tablet-max-width) {
     display: initial;
     margin-left: 25px;
@@ -244,12 +252,35 @@
   }
 }
 
+.footer__confidence {
+  align-self: center;
+  margin-left: 75px;
+
+  @media (max-width: $desktop-middle-point){
+    margin-left: 0;
+  }
+  @media (max-width: $mobile-max-width){
+  justify-self: center;
+  }
+}
+
 .footer .footer__developed {
-  margin-left: auto;
+
+  // margin-left: auto;
+  justify-self: end;
+  align-self: center;
+  @media (max-width: $tablet-max-width){
+    grid-column: 4 / -1;
+  }
+
 
   @media (max-width: $mobile-max-width){
-    margin-top: 21px;
-    margin-right: auto;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: initial;
+
+    // margin-top: 21px;
+    // margin-right: auto;
   }
 }
 
