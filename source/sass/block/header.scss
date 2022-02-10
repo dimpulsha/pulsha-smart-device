@@ -13,10 +13,14 @@
 
 .header__logo {
   flex-shrink: 0;
+  align-self: flex-start;
   display: block;
   width: 202px;
   height: 52px;
   margin-right: 35px;
+  @media (max-width: $tablet-max-width) {
+    align-self: unset;
+  }
 }
 
 .header__logo--main {
@@ -29,6 +33,8 @@
 }
 
 .header__button {
+  align-self: flex-start;
+  margin-top: 5px;
   @media (max-width: $tablet-max-width) {
     display: none;
   }

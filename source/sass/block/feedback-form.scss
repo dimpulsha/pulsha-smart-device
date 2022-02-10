@@ -29,9 +29,9 @@
   grid-template-areas:  "name "
                         "phone"
                         "question"
-                        "privacy"
-                        "submit";
-  row-gap: 30px;
+                        "submit"
+                        "privacy";
+  row-gap: 31px;
 }
 
 .feedback-form__input {
@@ -86,6 +86,10 @@
   }
 }
 
+.feedback-form--popup textarea {
+  height: 104px;
+}
+
 .feedback-form__input textarea::placeholder {
   font-family: $main-font-family;
   font-size: 16px;
@@ -106,6 +110,11 @@
   @media (max-width: $mobile-max-width) {
     padding: 0;
   }
+}
+
+.feedback-form--popup .feedback-form__checkbox {
+    padding-left: 0;
+    padding-right: 15px;
 }
 
 .feedback-form__checkbox input{
@@ -130,6 +139,10 @@
   width: 16px;
   height: 16px;
   border: 1px solid $border-button-default;
+}
+
+.feedback-form--popup .feedback-form__check-ico {
+   margin-right: 32px;
 }
 
 .feedback-form__checkbox input:not(:checked) + label svg {
