@@ -82,6 +82,10 @@
   text-transform: uppercase;
   color: $inversion-text;
 
+ @media (max-width: $desktop-middle-point){
+   font-size: 68px;
+ }
+
   @media (max-width: $tablet-max-width){
     font-size: 60px;
     line-height: 70px;
@@ -167,9 +171,13 @@
 .hello__image {
   position: absolute;
   right: -60px;
-  top: 258px;
-  max-width: 705px;
+  top: 119px;
+  max-width: 713px;
   width: 49%;
+
+   @media (max-width: $desktop-middle-point){
+    width: 46%;
+ }
 
   @media (max-width: $tablet-max-width) {
     top: 114px;
