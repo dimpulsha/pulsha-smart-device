@@ -139,7 +139,6 @@
             <source type="image/webp" media="(max-width: 1023px)" srcset="img/deco/2005-pad@1x.webp 1x, img/deco/2005-pad@2x.webp 2x">
             <!-- 1x 220x317  2x  440x634 -->
             <source type="image/webp" srcset="img/deco/2005-dt@1x.webp 1x, img/deco/2005-dt@2x.webp 2x">
-
             <!-- pad 1x 244x362  2x  487x724  desktop 1x 220x317  2x  440x634  -->
             <img srcset="img/deco/2005-dt@1x.png 220w,
             img/deco/2005-dt@1x.png 440w,
@@ -206,7 +205,6 @@
                     <source type="image/webp" media="(max-width: 1023px)" srcset="img/prod/solder-board-pad@1x.webp 1x, img/prod/solder-board-pad@2x.webp 2x">
                     <!-- 1x 370x620 2x 740x1240 -->
                     <source type="image/webp" srcset="img/prod/solder-board-dt@1x.webp 1x, img/prod/solder-board-dt@2x.webp 2x">
-
                     <!--  mob  1x 290x256 2x  580x512  pad 1x 720x256 2x 1440x512 desktop 370x620 2x 740x1240 -->
                     <img srcset="img/prod/solder-board-dt@1x.png 370w,
                       img/prod/solder-board-dt@2x.png 740w,
@@ -235,7 +233,6 @@
                     <source type="image/webp" media="(max-width: 1023px)" srcset="img/prod/light-pad@1x.webp 1x, img/prod/light-pad@2x.webp 2x">
                     <!-- 1x 370x620 2x 740x1240 -->
                     <source type="image/webp" srcset="img/prod/light-dt@1x.webp 1x, img/prod/light-dt@2x.webp 2x">
-
                     <!--  mob  1x 290x256 2x  580x512  pad 1x 720x256 2x 1440x512 desktop 370x620 2x 740x1240 -->
                     <img srcset="img/prod/light-dt@1x.png 370w,
                       img/prod/light-dt@2x.png 740w,
@@ -262,14 +259,14 @@
         <div class="feedback__content-wrapper feedback__content-wrapper--aiplane">
           <h2>Остались вопросы? Задайте их нам!</h2>
           <p>Мы проконсультируем Вас бесплатно</p>
-          <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post" name="feedback">
             <div class="feedback-form__input feedback-form__input--name">
               <label for="name-id">Введите ваше имя</label>
-              <input type="text" name="name" id="name-id" placeholder="Имя" required="">
+              <input type="text" name="name" id="name-id" placeholder="Имя" required="" autocomplete="off">
             </div>
             <div class="feedback-form__input feedback-form__input--phone">
               <label for="phone-id">Введите номер телефона</label>
-              <input type="tel" name="phone" id="phone-id" placeholder="Телефон" required="" data-phone-pattern="+7(___)___-__-__" data-phone-clear="false">
+              <input type="tel" name="phone" id="phone-id" placeholder="Телефон" required="" data-phone-pattern="+7(___)___-__-__" data-phone-clear="false" data-phone-prefix="+7(" autocomplete="off">
             </div>
             <div class="feedback-form__input feedback-form__input--question">
               <label for="question-id">Введите интересующий вас вопрос</label>
@@ -404,18 +401,18 @@
       <div class="popup__content-wrapper">
         <h2>Закажите звонок!</h2>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <form class="popup__form feedback-form feedback-form--popup" action="https://echo.htmlacademy.ru" method="post">
+        <form class="popup__form feedback-form feedback-form--popup" action="https://echo.htmlacademy.ru" method="post" name="feedbackpopup">
           <div class="feedback-form__input feedback-form__input--name">
             <label for="name-popup-id">Введите ваше имя</label>
-            <input type="text" name="name" id="name-popup-id" required="" placeholder="Имя" autofocus="">
+            <input type="text" name="name" id="name-popup-id" required="" placeholder="Имя" autofocus="" autocomplete="off">
           </div>
           <div class="feedback-form__input feedback-form__input--phone">
             <label for="phone-popup-id">Введите номер телефона</label>
-            <input type="tel" name="phone" id="phone-popup-id" data-phone-pattern="+7(___)___-__-__" data-phone-clear="false" required="" placeholder="Телефон">
+            <input type="tel" name="phone" id="phone-popup-id" data-phone-pattern="+7(___)___-__-__" data-phone-clear="false" required="" placeholder="Телефон" autocomplete="off">
           </div>
           <div class="feedback-form__input feedback-form__input--question">
             <label for="question-popup-id">Введите интересующий вас вопрос</label>
-            <textarea name="question" id="question-popup-id" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+            <textarea name="question" id="question-popup-id" cols="30" rows="10" placeholder="Ваш вопрос" autocomplete="off"></textarea>
           </div>
           <div class="feedback-form__checkbox feedback-form__checkbox--privacy">
             <input type="checkbox" name="privacy" id="privacy-popup-id" checked="" required="">
@@ -436,7 +433,8 @@
         </svg></button>
     </div>
   </div>
-  <script type="text/javascript" async="" src="js/main.js"></script>
+  <!-- <script type="text/javascript" async src="js/main.js"></script> -->
+  <script type="text/javascript" async="" src="js/main-2.js"></script>
 </body>
 
 

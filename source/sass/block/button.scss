@@ -15,8 +15,8 @@
   cursor: pointer;
 }
 
-.button--main{
-  height:45px;
+.button--main {
+  height: 45px;
   border: 1px solid $border-button-default;
   border-radius: 5px;
 }
@@ -26,7 +26,8 @@
   width: 180px;
   color: $inversion-text;
 
-  &:hover , &:focus{
+  &:hover,
+  &:focus {
     background-color: $background-accented;
     color: $inversion-text;
   }
@@ -55,13 +56,13 @@
 }
 
 .button--hello {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 
-  &:hover, &:focus {
-  opacity: 0.6;
-}
-
-&:active{
-  color: inherit;
+  &:active {
+    color: inherit;
   }
 }
 
@@ -72,7 +73,8 @@
   color: $text-accented;
   background-color: $border-button-default;
 
-  &:hover , &:focus{
+  &:hover,
+  &:focus {
     background-color: $background-accented;
     color: $inversion-text;
   }
@@ -90,15 +92,16 @@
     width: 277px;
   }
   @media (max-width: $mobile-max-width) {
-    width: 100%
+    width: 100%;
   }
 }
 
-.button--submit:hover, .button--submit:focus {
+.button--submit:hover,
+.button--submit:focus {
   background-color: $background-button-form;
 }
 
-.button--submit:active{
+.button--submit:active {
   background-color: $background-button-form;
   color: inherit;
 }

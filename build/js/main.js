@@ -178,11 +178,11 @@ const closePopup = (evt) => {
 const switchField = (evt) => {
   const popUp = evt.target.closest('.popup');
   const popupFieldList = popUp.querySelectorAll(popupFocusListArray);
-  console.log('popupFieldList');
-  console.log(popupFieldList);
+  // console.log('popupFieldList');
+  // console.log(popupFieldList);
   const nodesList = Array.prototype.slice.call(popupFieldList);
-  console.log('nodesList');
-  console.log(nodesList);
+  // console.log('nodesList');
+  // console.log(nodesList);
   // const fieldIndex =
 
   if (evt.key === 'Tab') {
